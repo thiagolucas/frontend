@@ -1,0 +1,15 @@
+ul{
+	list-style: none;
+}
+
+li{
+	display: block;
+}
+
+span input.form-control{
+	width: 25%;
+}
+
+button{
+	float: right;
+}

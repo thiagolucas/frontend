@@ -1,0 +1,20 @@
+<span><input ng-model="searchText" class="form-control" size="30" type="text"></span>
+<button ng-click="deletar()">excluir</button>
+
+<table class="table table-striped" width="647">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="m in membros | filter:searchText">
+      <td>1</td>
+      <td><span>{{m.nome}}</span></td>
+      <td><span>{{m.email}}</span></td>
+      <td><input type="checkbox" ng-model="m.deletar"></td>
+    </tr>
+  </tbody>
+</table>
